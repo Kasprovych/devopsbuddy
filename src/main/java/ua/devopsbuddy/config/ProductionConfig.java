@@ -12,7 +12,7 @@ import ua.devopsbuddy.backend.service.SmtpEmailService;
  */
 @Configuration
 @Profile("prod")
-@PropertySource("application-dev.properties")
+@PropertySource("application-prod.properties")
 public class ProductionConfig {
 
     @Bean
