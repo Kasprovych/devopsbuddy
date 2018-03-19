@@ -8,11 +8,11 @@
 
 <div class="container">
 
-    <div class="row">
+    <div class="row" >
 
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-6 col-md-offset-3" style="margin: 0 auto">
 
-            <div class="well">
+            <div class="card card-body bg-light" >
 
                 <div class="text-center">
 
@@ -20,7 +20,7 @@
                     <p class="lead" th:text="#{contact.p.lead}"></p>
 
                     <form id="contactForm"
-                          th:action="@{/contact/}"
+                          th:action="@{/contact}"
                           th:object="${feedback}"
                           method="post"
                           class="text-left">
