@@ -40,6 +40,6 @@ public class ContactController {
     public String contactPost(@ModelAttribute(FEEDBACK_MODEL_KEY) FeedbackPojo feedbackPojo){
         LOG.debug("Feedback POJO content: {}", feedbackPojo);
         emailService.sendFeedbackEmail(feedbackPojo);
-        return ContactController.CONTACT_US_VIEW_NAME;
+        return CONTACT_US_VIEW_NAME;
     }
 }
