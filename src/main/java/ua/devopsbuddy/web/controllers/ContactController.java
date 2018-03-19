@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,7 +31,7 @@ public class ContactController {
     private EmailService emailService;
 
     @RequestMapping(value = "/contact", method = RequestMethod.GET)
-    public String contactGet(ModelMap model) {
+    public String contactGet(Model model) {
         FeedbackPojo feedbackPojo = new FeedbackPojo();
         model.addAttribute(ContactController.FEEDBACK_MODEL_KEY, feedbackPojo);
         return CONTACT_US_VIEW_NAME;
