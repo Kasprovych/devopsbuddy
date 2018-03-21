@@ -1,17 +1,27 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
 
-<head th:replace="common/header :: common-header" />
+<head th:replace="common/header :: common-header"/>
 <body>
 
 <div th:replace="common/navbar :: common-navbar"/>
+  <!-- Main Jumbotron
+  ================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<br/>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h1 th:text="#{index.h1.text}"></h1>
+                    <p class="lead" th:text="#{index.p.lead}"></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <div class="container">
 
-    <div class="jumbotron text-center">
-        <h1 th:text="#{index.h1.text}"></h1>
-        <p class="lead" th:text="#{index.p.lead}"></p>
-    </div>
 
     <div class="row">
         <div class="col-md-6">
