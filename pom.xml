@@ -65,10 +65,7 @@
 		</dependency>
 
 		<!-- Hibernate dependencies -->
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-validator</artifactId>
-		</dependency>
+
 		<!--Webjars for jquery and bootstrap-->
 		<dependency>
 			<groupId>org.webjars</groupId>
