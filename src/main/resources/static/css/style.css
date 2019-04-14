@@ -1,15 +1,15 @@
 body {
-    padding-top: 0px;
+    padding-top: 10px;
 
     /* Courtesy of uigradients.com */
-    background: #085078; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #eee92a , #990663); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #085078, #edf664); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #666e6f; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #085078 , #85D8CE); /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to left,#ffc87f,#d86100);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
 .starter-template {
-    padding: 10px 15px;
+    padding: 1px 15px;
     text-align: center;
 }
 
@@ -73,5 +73,5 @@ body {
  *-------------------------------------------------------/
  /** Registration page */
 .fieldError {
-    border: 2px solid red;
+    border : 2px solid red;
 }
